@@ -182,7 +182,9 @@ useEffect(() => setHydrated(true), []);
                   <span className="block">Grow.</span>
                 </h1>
                 <p className="text-xl text-gray-600 max-w-lg">
-                  {"We don't just build websites. We engineer growth machines that convert visitors into customers and customers into advocates."}
+                  From <b>websites</b> to <b>social media</b>, from <b>content</b> creation to personal <b>branding</b>.
+                  <br/>
+                  — we help you make an <b>impact online</b>.
                 </p>
               </div>
 
@@ -206,7 +208,7 @@ useEffect(() => setHydrated(true), []);
 
               <div className="flex items-center space-x-8 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900">500+</div>
+                  <div className="text-3xl font-bold text-gray-900">100%</div>
                   <div className="text-sm text-gray-600">Projects Delivered</div>
                 </div>
                 <div className="text-center">
@@ -324,7 +326,7 @@ useEffect(() => setHydrated(true), []);
       </section>
 
       {/* Client Results Section */}
-      <section id="results" className="py-20">
+      <section id="results" className="py-20 hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`text-center mb-16 transition-all duration-1000 ${isVisible.results ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -413,7 +415,7 @@ useEffect(() => setHydrated(true), []);
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
+      <section className="py-20 hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">What Clients Say</h2>
@@ -478,7 +480,7 @@ useEffect(() => setHydrated(true), []);
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
                     <Input
-                      placeholder="John Doe"
+                      placeholder="Enter Name"
                       className="border-gray-300 focus:border-purple-500 focus:ring-purple-500"
                     />
                   </div>
@@ -486,7 +488,7 @@ useEffect(() => setHydrated(true), []);
                     <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
                     <Input
                       type="email"
-                      placeholder="john@company.com"
+                      placeholder="mail@company.com"
                       className="border-gray-300 focus:border-purple-500 focus:ring-purple-500"
                     />
                   </div>
@@ -504,7 +506,7 @@ useEffect(() => setHydrated(true), []);
                   size="lg"
                   className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 text-lg"
                 >
-                  Get My Free Audit
+                  Get a Free Audit
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </form>
