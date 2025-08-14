@@ -118,14 +118,23 @@ useEffect(() => setHydrated(true), []);
 
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors">
-                  Services
-                </a>
-                <a href="#results" className="text-gray-700 hover:text-purple-600 transition-colors">
-                  Results
+                <a href="#home" className="text-gray-700 hover:text-purple-600 transition-colors">
+                  Home
                 </a>
                 <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">
                   About
+                </a>
+                <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors">
+                  Services
+                </a>
+                <a href="#Portfolio" className="text-gray-700 hover:text-purple-600 transition-colors">
+                  Portfolio
+                </a>
+                <a href="#Blog" className="text-gray-700 hover:text-purple-600 transition-colors">
+                  Blog
+                </a>                
+                <a href="#results" className="text-gray-700 hover:text-purple-600 transition-colors">
+                  Results
                 </a>
                 <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">
                   Contact
@@ -145,14 +154,23 @@ useEffect(() => setHydrated(true), []);
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
+              <a href="#home" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
+                Home
+              </a>
+              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
+                About 
+              </a>
               <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
                 Services
               </a>
+              <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
+                Portfolio
+              </a>
+              <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
+                Blog 
+              </a>
               <a href="#results" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
                 Results
-              </a>
-              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
-                About
               </a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
                 Contact
@@ -212,21 +230,21 @@ useEffect(() => setHydrated(true), []);
                   <div className="text-sm text-gray-600">Projects Delivered</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900">98%</div>
-                  <div className="text-sm text-gray-600">Client Satisfaction</div>
+                  <div className="text-3xl font-bold text-gray-900">Top</div>
+                  <div className="text-sm text-gray-600">Speed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900">3.2x</div>
+                  <div className="text-3xl font-bold text-gray-900">2x</div>
                   <div className="text-sm text-gray-600">Avg ROI Increase</div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-500">
+              <div className="relative z-10 bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 transform hover:scale-110 hover:-translate-y-4 transition-transform duration-500">
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <div className="text-sm text-gray-500">Dashboard Overview</div>
+                    <div className="text-sm text-gray-500 font-bold">Dashboard Overview</div>
                     <div className="flex space-x-2">
                       <div className="w-3 h-3 bg-red-400 rounded-full"></div>
                       <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
@@ -394,15 +412,15 @@ useEffect(() => setHydrated(true), []);
               {
                 icon: Users,
                 title: "Expert Team",
-                description: "Senior-level talent across design, development, and marketing. No junior work.",
+                description: "Proven talent across design, development, and marketing, result driven work.",
               },
               {
                 icon: TrendingUp,
                 title: "Proven Process",
-                description: "Our methodology has generated over $50M in client revenue. It works.",
+                description: "Our methodology has generated notable outcomes in client revenue. It works.",
               },
             ].map((point, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center group transition-all duration-500 hover:bg-gray-100 hover:shadow-xl p-8 rounded-4xl cursor-pointer">
                 <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <point.icon className="h-10 w-10 text-purple-600" />
                 </div>
